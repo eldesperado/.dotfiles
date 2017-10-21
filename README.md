@@ -1,6 +1,6 @@
 TrungPNN's Dotfiles
 ========
-![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
+![Screenshot of my shell prompt](https://i.imgur.com/sCZeEVj.png)
 
 # Installation
 Warning: If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
@@ -29,7 +29,9 @@ When setting up a new Mac, you may want to install some common [Homebrew](https:
 
 ## Author
 
-| [![twitter/trungpnn](https://avatars1.githubusercontent.com/u/4667335?s=460&v=4)](https://twitter.com/trungpnn "Follow @trunpnn on Twitter") |
+| [![twitter/trungpnn](https://secure.gravatar.com/avatar/06042cc986e2cf5e252174247411e0eb)](https://twitter.com/trungpnn "Follow @trunpnn on Twitter") |
+|---|
+| [Nhat Trung](https://twitter.com/trungpnn) |
 
 ## Thanks to…
 * Mathias Bynens [his _macOS Setup_ repository](https://github.com/mathiasbynens/dotfiles)
