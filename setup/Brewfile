@@ -43,7 +43,7 @@ brew 'chisel'
 brew 'vim'
 
 # Fonts
-cask 'font-sauce-code-powerline'
+cask 'font-sharetechmono-nerd-font-mono'
 cask 'font-menlo-for-powerline'
 cask 'font-hack-nerd-font'
 
