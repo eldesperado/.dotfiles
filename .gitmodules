@@ -4,3 +4,9 @@
 [submodule "prezto"]
 	path = prezto
 	url = https://github.com/sorin-ionescu/prezto
+[submodule "dotbot-brewfile"]
+	path = dotbot-brewfile
+	url = https://github.com/sobolevn/dotbot-brewfile.git
+[submodule "iterm"]
+	path = iterm
+	url = https://github.com/dracula/iterm.git

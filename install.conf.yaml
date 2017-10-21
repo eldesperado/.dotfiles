@@ -11,11 +11,15 @@
     ~/.profile: profile
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
+
+    # Git:
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+
+    # Vim:
     ~/.vimrc: vimrc
 
-    #zsh/prezto setup
+    # zsh/prezto:
     ~/.zprezto: prezto/
     ~/.zlogin: zlogin
     ~/.zlogout: zlogout
@@ -24,11 +28,16 @@
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
 
-    #mackup
+    # mackup:
     ~/.mackup.cfg: mackup.cfg
 
-    #hammerspoon
+    # Hammerspoon:
     ~/.hammerspoon: 
         force: true
         path: hammerspoon
+
+# Brewfile:
+# - brewfile:
+#    file: setup/Brewfile
+#    no-upgrage: true
 
