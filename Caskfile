@@ -1,0 +1,42 @@
+# Fonts
+brew cask install 'font-sauce-code-powerline'
+brew cask install 'font-menlo-for-powerline'
+brew cask install 'font-hack-nerd-font'
+
+# Devs
+brew cask install 'charles'
+brew cask install 'iterm2'
+brew cask install 'visual-studio-code'
+brew cask install 'reveal'
+brew cask install 'sourcetree'
+
+# Productivity
+brew cask install 'alfred'
+brew cask install 'bartender'
+brew cask install 'flux'
+brew cask install 'popclip'
+brew cask install 'keyboard-maestro'
+brew cask install 'hammerspoon'
+brew cask install 'karabiner-elements'
+
+# Basics
+brew cask install 'google-chrome'
+brew cask install 'dropbox'
+brew cask install 'spotify'
+
+# Install Mac App Store apps
+mas '1Password', id: 443987910
+mas 'The Unarchiver', id: 425424353
+mas 'Slack', id: 803453959
+mas 'Spark', id: 1176895641
+mas 'Xcode', id: 497799835
+mas 'Xccello', id: 785109225
+mas 'Sip', id: 507257563
+mas 'Sketch', id: 402476602
+
+# Quicklook
+brew cask install 'qlcolorcode'
+brew cask install 'qlmarkdown'
+brew cask install 'quicklook-json'
+brew cask install 'quicklook-csv'
+brew cask install 'qlstephen'
