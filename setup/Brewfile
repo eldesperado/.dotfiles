@@ -1,0 +1,88 @@
+cask_args appdir: '/Applications'
+
+# Taps
+tap 'homebrew/bundle'
+tap "caskroom/cask"
+tap "caskroom/fonts"
+tap "homebrew/core"
+tap "homebrew/php"
+
+# Install ZSH
+brew 'zsh'
+
+# Install GNU core utilities (those that come with macOS are outdated)
+brew 'coreutils'
+
+# Install Binaries
+brew 'git'
+brew 'hub'
+brew 'tree'
+brew 'mackup'
+brew 'node'
+brew 'trash'
+brew 'wget'
+brew 'm-cli'
+brew 'openssl'
+brew 'python'
+brew 'ruby'
+brew 'sqlite'
+brew 'yarn'
+brew "tmux"
+
+# Utilities
+brew 'ripgrep'
+brew 'thefuck'
+
+# Devs
+brew 'mitmproxy'
+brew 'git-standup'
+brew 'ideviceinstaller'
+brew 'ios-webkit-debug-proxy'
+brew 'cocoapods'
+brew 'chisel'
+brew 'vim'
+
+# Fonts
+cask 'font-sauce-code-powerline'
+cask 'font-menlo-for-powerline'
+cask 'font-hack-nerd-font'
+
+# Devs
+cask 'charles'
+cask 'iterm2'
+cask 'visual-studio-code'
+cask 'reveal'
+cask 'sourcetree'
+
+# Productivity
+cask 'alfred'
+cask 'bartender'
+cask 'flux'
+cask 'popclip'
+cask 'keyboard-maestro'
+cask 'hammerspoon'
+cask 'karabiner-elements'
+
+# Basics
+cask 'google-chrome'
+cask 'dropbox'
+cask 'spotify'
+
+# Install Mac App Store apps
+mas "1Password", id: 443987910
+mas "Irvue", id: 1039633667
+mas "Simplenote", id: 692867256
+mas 'The Unarchiver', id: 425424353
+mas 'Slack', id: 803453959
+mas 'Spark', id: 1176895641
+mas 'Xcode', id: 497799835
+mas 'Sip', id: 507257563
+
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'quicklook-csv'
+cask 'qlstephen'
+cask "qlimagesize"
+cask "qlswift"
