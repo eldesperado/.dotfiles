@@ -1,11 +1,38 @@
-Dotfiles
+TrungPNN's Dotfiles
 ========
+![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
+
+# Installation
+Warning: If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 After cloning this repo, run `install` to automatically set up the development
 environment. Note that the install script is idempotent: it can safely be run
 multiple times.
 
 Dotfiles uses [Dotbot][dotbot] for installation.
+
+### Sensible macOS defaults
+
+When setting up a new Mac, you may want to set some sensible macOS defaults:
+
+```bash
+./setup/macos/.macos
+```
+
+### Install Homebrew formulae
+
+When setting up a new Mac, you may want to install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew-bundle, of course) using [Homebrew-bundle](https://github.com/Homebrew/homebrew-bundle):
+
+```bash
+.brew bundle /setup/Brewfile
+```
+
+## Author
+
+| [![twitter/trungpnn](https://avatars1.githubusercontent.com/u/4667335?s=460&v=4)](https://twitter.com/trungpnn "Follow @trunpnn on Twitter") |
+
+## Thanks to…
+* Mathias Bynens [his _macOS Setup_ repository](https://github.com/mathiasbynens/dotfiles)
 
 License
 -------
