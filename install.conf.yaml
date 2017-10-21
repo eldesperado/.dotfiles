@@ -1,7 +1,6 @@
 - defaults:
     link:
         relink: true
-        force: true
 
 - clean: ['~']
 
@@ -29,5 +28,7 @@
     ~/.mackup.cfg: mackup.cfg
 
     #hammerspoon
-    ~/.hammerspoon: hammerspoon
+    ~/.hammerspoon: 
+        force: true
+        path: hammerspoon
 
