@@ -1,10 +1,33 @@
+- defaults:
+    link:
+        relink: true
+        force: true
+
 - clean: ['~']
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
 
 - link:
     ~/.profile: profile
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
     ~/.vimrc: vimrc
 
+    #zsh/prezto setup
+    ~/.zprezto: prezto/
+    ~/.zlogin: zlogin
+    ~/.zlogout: zlogout
+    ~/.zpreztorc: zpreztorc
+    ~/.zprofile: zprofile
+    ~/.zshenv: zshenv
+    ~/.zshrc: zshrc
+
+    #mackup
+    ~/.mackup.cfg: mackup.cfg
+
+    #hammerspoon
+    ~/.hammerspoon: hammerspoon
 
