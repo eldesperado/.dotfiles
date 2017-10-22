@@ -16,6 +16,7 @@ Dotfiles uses [Dotbot][dotbot] for installation.
 When setting up a new Mac, you may want to set some sensible macOS defaults:
 
 ```bash
+cd 'YOUR_CLONED_DOTFILES_FOLDER'
 sh ./setup/macos/.macos
 ```
 
@@ -24,6 +25,7 @@ sh ./setup/macos/.macos
 When setting up a new Mac, you may want to install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew-bundle, of course) using [Homebrew-bundle](https://github.com/Homebrew/homebrew-bundle):
 
 ```bash
+cd 'YOUR_CLONED_DOTFILES_FOLDER'
 brew bundle ./setup/Brewfile
 ```
 
