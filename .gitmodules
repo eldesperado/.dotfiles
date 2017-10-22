@@ -13,3 +13,6 @@
 [submodule "zsh-prezto/prezto"]
 	path = zsh-prezto/prezto
 	url = https://github.com/sorin-ionescu/prezto
+[submodule "vim/vim_runtime"]
+	path = vim/vim_runtime
+	url = https://github.com/amix/vimrc.git

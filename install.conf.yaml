@@ -41,6 +41,12 @@
     ~/.stCommitMsg: git/stCommitMsg
 
     # Vim:
+    ~/.vim:
+        force: true
+        path: vim/.vim
+    ~/.vim_runtime:
+        force: true
+        path: vim/vim_runtime
     ~/.vimrc:
         force: true
         path: vim/vimrc
