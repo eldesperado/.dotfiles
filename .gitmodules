@@ -1,12 +1,15 @@
-[submodule "dotbot"]
-	path = dotbot
+[submodule "setup/tools/dotbot"]
+	path = setup/tools/dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "setup/tools/dotbot-brewfile"]
+	path = setup/tools/dotbot-brewfile
+	url = https://github.com/sobolevn/dotbot-brewfile.git
 [submodule "prezto"]
 	path = prezto
 	url = https://github.com/sorin-ionescu/prezto
-[submodule "dotbot-brewfile"]
-	path = dotbot-brewfile
-	url = https://github.com/sobolevn/dotbot-brewfile.git
-[submodule "iterm"]
-	path = iterm
+[submodule "setup/fonts/powerline-fonts"]
+	path = setup/fonts/powerline-fonts
+	url = https://github.com/powerline/fonts.git
+[submodule "setup/themes/dracula-iterm"]
+	path = setup/themes/dracula-iterm
 	url = https://github.com/dracula/iterm.git

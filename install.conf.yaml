@@ -5,9 +5,29 @@
 - clean: ['~']
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
+    - 
+      - "sleep 0"
+      - "Installing TrungPNN's dotfiles"
+    - 
+      command: 
+        - "git pull"
+        - "Updating dotfiles"
+      stderr: true
+      stdout: true
+    - 
+      command: 
+        - "git submodule update --init --recursive --quiet"
+        - "Installing submodules"
+      stderr: true
+      stdout: true
 
 - link:
+    # Setup
+    ~/.setup:
+        force: true
+        path: setup
+
+    # Bash
     ~/.profile: profile
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
@@ -35,6 +55,16 @@
     ~/.hammerspoon: 
         force: true
         path: hammerspoon
+
+- shell:
+    - 
+      command: 
+        - sh ~/.setup/fonts/install.sh
+        - "Installing fonts(Powerline"
+        - "Nerd and more)"
+      stderr: true
+      stdin: true
+      stdout: true
 
 # Brewfile:
 # - brewfile:

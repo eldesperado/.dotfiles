@@ -44,8 +44,6 @@ brew 'vim'
 
 # Fonts
 cask 'font-sharetechmono-nerd-font-mono'
-cask 'font-menlo-for-powerline'
-cask 'font-hack-nerd-font'
 
 # Devs
 cask 'charles'
