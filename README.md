@@ -1,8 +1,22 @@
 TrungPNN's Dotfiles
-========
-![Screenshot of my shell prompt](https://i.imgur.com/sCZeEVj.png)
+<div align="left">
+  <a href="https://opensource.org/licenses/mit-license.php">
+    <img alt="MIT Licence" src="https://badges.frapsoft.com/os/mit/mit.svg?v=103" />
+  </a>
+  <a href="https://github.com/ellerbrock/open-source-badge/">
+    <img alt="Open Source Love" src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" />
+  </a>
+</div>
 
-# Installation
+<br />
+
+**This dotfiles** contains awesome configurations for CLI commands and `macOS` environments, along with powerfully customized Vim, Zsh.
+
+<div align="center">
+<img alt="Screenshot of my shell prompt" src="https://i.imgur.com/sCZeEVj.png" width="85%" />
+</div>
+
+## Installation
 Warning: If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 After cloning this repo, run `install` to automatically set up the development
@@ -11,13 +25,18 @@ multiple times.
 
 Dotfiles uses [Dotbot][dotbot] for installation.
 
+```bash
+$ git clone https://github.com/eldesperado/.dotfiles.git ~/.dotfiles
+$ cd ~/.dotfiles
+$ ./install
+```
+
 ### Sensible macOS defaults
 
 When setting up a new Mac, you may want to set some sensible macOS defaults:
 
 ```bash
-cd 'YOUR_CLONED_DOTFILES_FOLDER'
-sh ./setup/macos/.macos
+$ sh ./setup/macos/.macos
 ```
 
 ### Install Homebrew formulae
@@ -25,7 +44,6 @@ sh ./setup/macos/.macos
 When setting up a new Mac, you may want to install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew-bundle, of course) using [Homebrew-bundle](https://github.com/Homebrew/homebrew-bundle):
 
 ```bash
-cd 'YOUR_CLONED_DOTFILES_FOLDER'
 brew bundle ./setup/Brewfile
 ```
 
