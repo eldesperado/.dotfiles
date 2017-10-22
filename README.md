@@ -1,4 +1,7 @@
-TrungPNN's Dotfiles
+
+<div align="left">
+  <h1>TrungPNN's Dotfiles</h1>
+</div>
 <div align="left">
   <a href="https://opensource.org/licenses/mit-license.php">
     <img alt="MIT Licence" src="https://badges.frapsoft.com/os/mit/mit.svg?v=103" />
