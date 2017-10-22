@@ -57,7 +57,8 @@ $ brew bundle ./setup/Brewfile
 | [Nhat Trung](https://twitter.com/trungpnn) |
 
 ## Thanks to…
-* Mathias Bynens [his _macOS Setup_ repository](https://github.com/mathiasbynens/dotfiles)
+* Mathias Bynens and [his _macOS Setup_ repository](https://github.com/mathiasbynens/dotfiles)
+* Amir Salihefendic and [his _VIM Setup_ repository](https://github.com/amix/vimrc)
 
 License
 -------
