@@ -33,8 +33,12 @@
     ~/.bashrc: bashrc
 
     # Git:
-    ~/.gitconfig: gitconfig
-    ~/.gitignore_global: gitignore_global
+    ~/.gitconfig:
+        force: true
+        path: git/gitconfig
+    ~/.gitignore_global: git/gitignore_global
+    ~/.gitconfig.local: git/gitconfig.local
+    ~/.stCommitMsg: git/stCommitMsg
 
     # Vim:
     ~/.vimrc: vimrc
