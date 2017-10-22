@@ -48,7 +48,7 @@
     # zsh/prezto:
     ~/.zprezto:
         force: true
-        path: prezto/
+        path: zsh-prezto/prezto/
     ~/.zlogin: 
         force: true
         path: zsh-prezto/zlogin

@@ -13,3 +13,6 @@
 [submodule "setup/themes/dracula-iterm"]
 	path = setup/themes/dracula-iterm
 	url = https://github.com/dracula/iterm.git
+[submodule "zsh-prezto/prezto"]
+	path = zsh-prezto/prezto
+	url = https://github.com/sorin-ionescu/prezto
