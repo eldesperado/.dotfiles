@@ -4,9 +4,6 @@
 [submodule "setup/fonts/powerline-fonts"]
 	path = setup/fonts/powerline-fonts
 	url = https://github.com/powerline/fonts.git
-[submodule "setup/themes/dracula-iterm"]
-	path = setup/themes/dracula-iterm
-	url = https://github.com/dracula/iterm.git
 [submodule "zsh-prezto/prezto"]
 	path = zsh-prezto/prezto
 	url = https://github.com/sorin-ionescu/prezto

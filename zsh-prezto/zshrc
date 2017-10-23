@@ -14,6 +14,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Customize Dark iTerm titlebar color (Source: https://codematters.blog/custom-iterm2-titlebar-background-colors-a088c6f2ec60)
+echo -e '\033]6;1;bg;red;brightness;40\a'
+echo -e '\033]6;1;bg;green;brightness;44\a'
+echo -e '\033]6;1;bg;blue;brightness;52\a'
+
 # why would you type 'cd dir' if you could just type 'dir'?
 setopt AUTO_CD
 
@@ -104,7 +109,6 @@ alias ls='ls -G'                            # Preferred 'ls' implementation
 alias ll='ls -FGlAhp'                       # Preferred 'ls' with long format implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
 alias l.='ls -d .* --color=auto'            # Show hidden files
-cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels
