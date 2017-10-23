@@ -47,7 +47,8 @@ $ sh ./setup/macos/.macos
 When setting up a new Mac, you may want to install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew-bundle, of course) using [Homebrew-bundle](https://github.com/Homebrew/homebrew-bundle):
 
 ```bash
-$ brew bundle ./setup/Brewfile
+$ cd ~/.setup
+$ brew bundle
 ```
 
 ## Author

@@ -91,9 +91,11 @@
       stderr: true
       stdin: true
       stdout: true
-
-# Brewfile:
-# - brewfile:
-#    file: setup/Brewfile
-#    no-upgrage: true
-
+    
+    # - 
+    #   command: 
+    #     - brew bundle --file='$HOME/.setup/'
+    #     - "Brew bundle"
+    #   stderr: true
+    #   stdin: true
+    #   stdout: true
