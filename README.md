@@ -39,7 +39,7 @@ $ ./install
 When setting up a new Mac, you may want to set some sensible macOS defaults:
 
 ```bash
-$ sh ./setup/macos/.macos
+$ sh ~/.setup/macos/.macos
 ```
 
 ### Install Homebrew formulae
