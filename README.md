@@ -16,7 +16,7 @@
 **This dotfiles** contains awesome configurations for CLI commands and `macOS` environments, along with powerfully customized Vim, Zsh.
 
 <div align="center">
-<img alt="Screenshot of my shell prompt" src="https://i.imgur.com/LXthgyi.png" width="90%" />
+<img alt="Screenshot of my shell prompt" src="https://i.imgur.com/zFfI1fE.png" width="90%" />
 </div>
 
 ## Installation
