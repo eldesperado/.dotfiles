@@ -1,8 +1,13 @@
 - defaults:
     link:
         relink: true
+        create: true
+    shell:
+        stdin: true
+        stdout: true
+        stderr: true
 
-- clean: ['~']
+- clean: ['~', '~/.setup']
 
 - shell:
     - 
@@ -41,12 +46,6 @@
     ~/.stCommitMsg: git/stCommitMsg
 
     # Vim:
-    ~/.vim:
-        force: true
-        path: vim/.vim
-    ~/.vim_runtime:
-        force: true
-        path: vim/vim_runtime
     ~/.vimrc:
         force: true
         path: vim/vimrc
@@ -88,14 +87,11 @@
         - sh ~/.setup/fonts/install.sh
         - "Installing fonts(Powerline"
         - "Nerd and more)"
-      stderr: true
-      stdin: true
-      stdout: true
     
-    # - 
-    #   command: 
-    #     - brew bundle --file='$HOME/.setup/'
-    #     - "Brew bundle"
-    #   stderr: true
-    #   stdin: true
-    #   stdout: true
+    - 
+      command: 
+        - sh ~/.setup/git/install.sh
+    - 
+      command: 
+        - sh ~/.setup/homebrew/install.sh 
+    

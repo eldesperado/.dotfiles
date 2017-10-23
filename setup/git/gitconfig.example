@@ -25,6 +25,3 @@
 	helper = osxkeychain
 [commit]
 	template = ~/.stCommitMsg
-[user]
-	name = Pham Nguyen Nhat Trung
-	email = trungpnn@vng.com.vn
