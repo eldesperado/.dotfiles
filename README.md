@@ -44,12 +44,7 @@ $ sh ~/.setup/macos/.macos
 
 ### Install Homebrew formulae
 
-When setting up a new Mac, you may want to install some common [Homebrew](https://brew.sh/) formulae (after installing Homebrew-bundle, of course) using [Homebrew-bundle](https://github.com/Homebrew/homebrew-bundle):
-
-```bash
-$ cd ~/.setup
-$ brew bundle
-```
+When running `install` script, it will ask you whether you want to install [Homebrew](https://brew.sh/) and its formulae or not.
 
 ## Author
 
@@ -60,6 +55,7 @@ $ brew bundle
 ## Thanks to…
 * Mathias Bynens and [his _macOS Setup_ repository](https://github.com/mathiasbynens/dotfiles)
 * Amir Salihefendic and [his _VIM Setup_ repository](https://github.com/amix/vimrc)
+* Felix Jung and [his _dofiles_ repository](https://github.com/felixjung/dotfiles)
 
 License
 -------
