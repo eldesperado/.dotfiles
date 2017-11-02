@@ -13,8 +13,5 @@ require('focus')
 require('spaces')
 require('wifi')
 require('others')
-require('keyboard')
-require('usb')
-require('utils')
 
 hs.alert.show("Hammerspoon, at your service!")
