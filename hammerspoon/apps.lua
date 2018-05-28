@@ -10,6 +10,6 @@ hs.hotkey.bind(mash.apps, 'c', function () hs.application.launchOrFocus("Visual 
 hs.hotkey.bind(mash.apps, 's', function () hs.application.launchOrFocus("SourceTree") end)
 hs.hotkey.bind(mash.apps, 'd', function () hs.application.launchOrFocus("Dash") end)
 hs.hotkey.bind(mash.apps, 't', function () hs.application.launchOrFocus("Trello") end)
-hs.hotkey.bind(mash.apps, 'e', function () hs.application.launchOrFocus("Spark") end)
 hs.hotkey.bind(mash.apps, 'm', function () hs.application.launchOrFocus("Spotify") end)
+hs.hotkey.bind(mash.apps, 'e', function () hs.application.launchOrFocus("Microsoft Outlook") end)
 hs.hotkey.bind(mash.apps, 'l', function () hs.application.launchOrFocus("Slack") end)
