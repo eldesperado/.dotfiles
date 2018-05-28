@@ -1,11 +1,11 @@
 #!/usr/local/env bash
 
-homebrew_dir="$(dirname "$(realpath "$0")")"
+homebrew_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo $homebrew_dir
 source "$homebrew_dir/../lib/log.sh"
 source "$homebrew_dir/../lib/prompt.sh"
 
-if ! yes_no_prompt "Install Homebrew and all formulae? "; then
+if ! yes_no_prompt "Install Homebrew formulae? "; then
   exit
 fi
 
