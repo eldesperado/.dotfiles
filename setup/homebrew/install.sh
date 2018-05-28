@@ -46,11 +46,6 @@ success "Installed Homebrew formulae."
 
 info "Installing Homebrew casks..."
 source "$homebrew_dir/casks.sh"
-success "Installed casks."
-
-info "Installing Homebrew casks..."
-source "$homebrew_dir/casks.sh"
-success "Installed casks."
 
 info "Installing Homebrew mas..."
 source "$homebrew_dir/mas.sh"
