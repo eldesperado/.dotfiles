@@ -1,7 +1,6 @@
 #!/usr/local/env bash
 
 homebrew_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-echo $homebrew_dir
 source "$homebrew_dir/../lib/log.sh"
 source "$homebrew_dir/../lib/prompt.sh"
 
@@ -52,6 +51,10 @@ success "Installed casks."
 info "Installing Homebrew casks..."
 source "$homebrew_dir/casks.sh"
 success "Installed casks."
+
+info "Installing Homebrew mas..."
+source "$homebrew_dir/mas.sh"
+success "Installed mas."
 
 success "Successfully installed Homebrew."
 exit
