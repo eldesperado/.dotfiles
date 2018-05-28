@@ -347,3 +347,11 @@ function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 . `brew --prefix`/etc/profile.d/z.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export MonkeyDevPath=/opt/MonkeyDev
+export MonkeyDevDeviceIP=
+export PATH=/opt/MonkeyDev/bin:$PATH
+export PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH" 
+export THEOS="/opt/theos"
+

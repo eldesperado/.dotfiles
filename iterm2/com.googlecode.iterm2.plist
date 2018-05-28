@@ -531,18 +531,24 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>397 72 817 244 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>269 226 606 456 0 0 1280 777 </string>
+	<string>825 591 606 456 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>332 288 620 392 0 0 1280 777 </string>
+	<string>652 516 620 392 0 0 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>350 292 796 473 0 0 1280 778 </string>
+	<string>748 574 796 473 0 0 1920 1080 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>155 473 592 584 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 377 570 401 0 0 1280 778 </string>
+	<string>-844 771 490 376 -1080 -400 1080 1898 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>173 113 570 402 0 0 1280 800 </string>
+	<string>268 84 490 376 0 0 1920 1058 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>289 61 490 376 0 0 1920 1058 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>601 184 490 376 0 0 1920 1058 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>913 251 490 376 0 0 1920 1058 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1153,7 +1159,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>ShureTechMonoNerdFontC-Regular 13</string>
+			<string>ShureTechMonoNerdFontCM-Regular 12</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1224,10 +1230,18 @@
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
-	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
+	<key>NoSyncConfirmBeta</key>
 	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
+	<integer>1</integer>
 	<key>NoSyncInstallationId</key>
-	<string>0DB26694-637E-4A85-AE89-E02E85E1F947</string>
+	<string>7825060C-68D3-4616-B67B-0F8AE67F0B84</string>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1235,7 +1249,11 @@
 	<key>NoSyncPermissionToShowTip</key>
 	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>510549906.97518802</real>
+	<real>486472269.87450999</real>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>483416471.50676799</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>486352869.61558098</real>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1270,7 +1288,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/mac/.dotfiles/iterm2</string>
+	<string>/Users/cpu11739-local/.dotfiles/iterm2</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>SUAutomaticallyUpdate</key>
@@ -1280,15 +1298,13 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=1</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=58</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-23T13:09:02Z</date>
-	<key>SUSendProfileInfo</key>
-	<false/>
+	<date>2018-05-16T12:03:56Z</date>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
@@ -1297,11 +1313,13 @@
 	<integer>3</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1506567424</real>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.4</string>
+	<string>3.1.5</string>
 </dict>
 </plist>

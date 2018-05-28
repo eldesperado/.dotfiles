@@ -1,6 +1,6 @@
 #! /usr/local/env bash
 
-git_dir="$(dirname "$(realpath "$0")")"
+git_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$git_dir/../lib/log.sh"
 source "$git_dir/../lib/prompt.sh"
 

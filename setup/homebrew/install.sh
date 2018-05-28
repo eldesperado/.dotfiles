@@ -1,11 +1,10 @@
 #!/usr/local/env bash
 
-homebrew_dir="$(dirname "$(realpath "$0")")"
-echo $homebrew_dir
+homebrew_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$homebrew_dir/../lib/log.sh"
 source "$homebrew_dir/../lib/prompt.sh"
 
-if ! yes_no_prompt "Install Homebrew and all formulae? "; then
+if ! yes_no_prompt "Install Homebrew formulae? "; then
   exit
 fi
 
@@ -52,6 +51,10 @@ success "Installed casks."
 info "Installing Homebrew casks..."
 source "$homebrew_dir/casks.sh"
 success "Installed casks."
+
+info "Installing Homebrew mas..."
+source "$homebrew_dir/mas.sh"
+success "Installed mas."
 
 success "Successfully installed Homebrew."
 exit
