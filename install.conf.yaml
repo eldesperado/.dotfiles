@@ -77,18 +77,37 @@
     ~/.hammerspoon: 
         force: true
         path: hammerspoon
+    
+    # vscode
+    "~/Library/Application Support/Code/User/settings.json":
+        path: setup/vscode/settings.json
+        create: true
+        force: true
+    "~/Library/Application Support/Code/User/snippets":
+        path: setup/vscode/snippets
+        create: true
+        force: true
 
 - shell:
+    # font
     - 
       command: 
         - sh ~/.setup/fonts/install.sh
         - "Installing fonts(Powerline"
         - "Nerd and more)"
     
+    # Git
     - 
       command: 
         - sh ~/.setup/git/install.sh
+
+    # Homebrew
     - 
       command: 
-        - sh ~/.setup/homebrew/install.sh 
+        - sh ~/.setup/homebrew/install.sh
+
+    # vscode
+    - 
+      command: 
+        - sh ~/.setup/vscode/install.sh
     

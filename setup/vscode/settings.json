@@ -1,0 +1,6 @@
+{
+    "extensions.ignoreRecommendations": false,
+    "workbench.colorTheme": "One Dark Pro",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.multiCursorModifier": "alt"
+}
