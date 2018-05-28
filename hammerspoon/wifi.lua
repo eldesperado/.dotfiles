@@ -86,17 +86,3 @@ function pingResult(object, message, seqnum, error)
     end
 end
 
--- Monitor internet status with a menubar item
-local wifiMenu = hs.menubar.new():setTitle("?")
-wifiWatcher = hs.network.reachability.forAddress("8.8.8.8"):setCallback(
-    function(self, flags)
-
-        if (flags & hs.network.reachability.flags.reachable) > 0 then
-            -- Internet is reachable
-            wifiMenu:setTitle("😍")
-        else
-            -- Interner is not reachable
-            wifiMenu:setTitle("❗")
-        end
-    end
-):start()
