@@ -1,15 +1,15 @@
 
-# eonts
+# fonts
 brew cask install 'font-sharetechmono-nerd-font-mono'
 
-# eevs
+# devs
 brew cask install 'charles'
 brew cask install 'iterm2'
 brew cask install 'visual-studio-code'
 brew cask install 'reveal'
 brew cask install 'sourcetree'
 
-# eroductivity
+# productivity
 brew cask install 'alfred'
 brew cask install 'bartender'
 brew cask install 'flux'
@@ -17,13 +17,17 @@ brew cask install 'popclip'
 brew cask install 'keyboard-maestro'
 brew cask install 'hammerspoon'
 brew cask install 'karabiner-elements'
+brew cask install '1password'
+brew cask install 'simplenote'
+brew cask install 'the-unarchiver'
 
-# easics
+# basics
 brew cask install 'google-chrome'
 brew cask install 'dropbox'
 brew cask install 'spotify'
+brew cask install 'slack'
 
-# euicklook
+# quicklook
 brew cask install 'qlcolorcode'
 brew cask install 'qlmarkdown'
 brew cask install 'quicklook-json'
