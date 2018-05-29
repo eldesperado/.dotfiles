@@ -33,50 +33,50 @@
         path: setup
 
     # Bash
-    ~/.profile: profile
-    ~/.bash_profile: bash_profile
-    ~/.bashrc: bashrc
+    ~/.profile: setup/bash/profile
+    ~/.bash_profile: setup/bash/bash_profile
+    ~/.bashrc: setup/bash/bashrc
 
     # Git:
-    ~/.gitignore_global: git/gitignore_global
-    ~/.gitconfig.local: git/gitconfig.local
-    ~/.stCommitMsg: git/stCommitMsg
+    ~/.gitignore_global: setup/git/gitignore_global
+    ~/.gitconfig.local: setup/git/gitconfig.local
+    ~/.stCommitMsg: setup/git/stCommitMsg
 
     # Vim:
     ~/.vimrc:
         force: true
-        path: vim/vimrc
+        path: setup/vim/vimrc
 
     # zsh/prezto:
     ~/.zprezto:
         force: true
-        path: zsh-prezto/prezto/
+        path: setup/zsh-prezto/prezto/
     ~/.zlogin: 
         force: true
-        path: zsh-prezto/zlogin
+        path: setup/zsh-prezto/zlogin
     ~/.zlogout: 
         force: true
-        path: zsh-prezto/zlogout
+        path: setup/zsh-prezto/zlogout
     ~/.zpreztorc: 
         force: true
-        path: zsh-prezto/zpreztorc
+        path: setup/zsh-prezto/zpreztorc
     ~/.zprofile: 
         force: true
-        path: zsh-prezto/zprofile
+        path: setup/zsh-prezto/zprofile
     ~/.zshenv: 
         force: true
-        path: zsh-prezto/zshenv
+        path: setup/zsh-prezto/zshenv
     ~/.zshrc: 
         force: true
-        path: zsh-prezto/zshrc
+        path: setup/zsh-prezto/zshrc
 
     # mackup:
-    ~/.mackup.cfg: mackup.cfg
+    ~/.mackup.cfg: setup/mackup/mackup.cfg
 
     # Hammerspoon:
     ~/.hammerspoon: 
         force: true
-        path: hammerspoon
+        path: setup/hammerspoon
     
     # vscode
     "~/Library/Application Support/Code/User/settings.json":

@@ -4,9 +4,9 @@
 [submodule "setup/fonts/powerline-fonts"]
 	path = setup/fonts/powerline-fonts
 	url = https://github.com/powerline/fonts.git
-[submodule "zsh-prezto/prezto"]
-	path = zsh-prezto/prezto
-	url = https://github.com/sorin-ionescu/prezto
 [submodule "vim/vim_runtime"]
-	path = vim/vim_runtime
+	path = setup/vim/vim_runtime/vim_runtime
 	url = https://github.com/amix/vimrc.git
+[submodule "setup/zsh-prezto/prezto"]
+	path = setup/zsh-prezto/prezto
+	url = https://github.com/sorin-ionescu/prezto
