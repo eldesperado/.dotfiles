@@ -1,7 +1,17 @@
 #!/bin/sh
-set -e
 
-iterm2_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+  TARGET="$(readlink "$SOURCE")"
+  if [[ $TARGET == /* ]]; then
+    SOURCE="$TARGET"
+  else
+    DIR="$( dirname "$SOURCE" )"
+    SOURCE="$DIR/$TARGET" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+  fi
+done
+
+iterm2_dir="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 source "$iterm2_dir/../lib/log.sh"
 source "$iterm2_dir/../lib/prompt.sh"
 
