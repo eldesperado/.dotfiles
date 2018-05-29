@@ -1,3 +1,5 @@
+# env
+brew cask install 'java'
 
 # fonts
 brew cask install 'font-sharetechmono-nerd-font-mono'
