@@ -111,6 +111,11 @@
       command: 
         - sh ~/.setup/vscode/install.sh
 
+    # iterm2 setup
+    - 
+      command: 
+        - sh ~/.setup/iterm2/install.sh
+
     # terminal & iterm2 themes
     - 
       command: 
