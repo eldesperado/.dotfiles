@@ -8,6 +8,7 @@ if ! yes_no_prompt "Install Terminal & iTerm2 theme? "; then
   exit
 fi
 
+info "Installing Terminal theme..."
 # Use a modified version of the theme by default in Terminal.app
 osascript <<EOD
 tell application "Terminal"
@@ -41,6 +42,9 @@ tell application "Terminal"
 	end repeat
 end tell
 EOD
+success "Installed Terminal theme."
 
-# Install the Dracula for iTerm
+info "Installing iTerm2 theme..."
+# Install the theme for iTerm
 open "$theme_dir/onedark/OneDark.itermcolors"
+success "Installed iTerm2 theme."
