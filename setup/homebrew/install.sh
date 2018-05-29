@@ -52,5 +52,9 @@ info "Installing Homebrew mas..."
 source "$homebrew_dir/mas.sh"
 success "Installed mas."
 
+info "Remove outdated versions from the cellar..."
+brew cleanup
+success "Removed outdated versions."
+
 success "Successfully installed Homebrew."
 exit
