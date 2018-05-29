@@ -15,9 +15,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize Dark iTerm titlebar color (Source: https://codematters.blog/custom-iterm2-titlebar-background-colors-a088c6f2ec60)
-echo -e '\033]6;1;bg;red;brightness;40\a'
-echo -e '\033]6;1;bg;green;brightness;44\a'
-echo -e '\033]6;1;bg;blue;brightness;52\a'
+# echo -e '\033]6;1;bg;red;brightness;40\a'
+# echo -e '\033]6;1;bg;green;brightness;44\a'
+# echo -e '\033]6;1;bg;blue;brightness;52\a'
 
 # why would you type 'cd dir' if you could just type 'dir'?
 setopt AUTO_CD
