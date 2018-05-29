@@ -110,4 +110,9 @@
     - 
       command: 
         - sh ~/.setup/vscode/install.sh
+
+    # terminal & iterm2 themes
+    - 
+      command: 
+        - sh ~/.setup/themes/install.sh
     
