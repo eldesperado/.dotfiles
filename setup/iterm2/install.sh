@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# https://stackoverflow.com/questions/59895/getting-the-source-directory-of-a-bash-script-from-within/246128
 SOURCE="${BASH_SOURCE[0]}"
 while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
   TARGET="$(readlink "$SOURCE")"
