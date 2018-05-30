@@ -21,7 +21,7 @@ fi
 # echo -e '\033]6;1;bg;green;brightness;44\a'
 # echo -e '\033]6;1;bg;blue;brightness;52\a'
 
-for file in ~/.setup/shell/.{path,bash_prompt,exports,aliases,functions,zshrc.local}; do
+for file in ~/.setup/shell/.{path,bash_prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
