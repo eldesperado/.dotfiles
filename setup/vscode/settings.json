@@ -1,13 +1,11 @@
-
 {
     "editor.fontFamily": "'Operator Mono Lig', 'FuraCode Nerd Font', Menlo",
     "workbench.colorTheme": "One Dark Pro",
-    "editor.cursorStyle": "block",
+    "editor.cursorStyle": "line",
     "editor.cursorBlinking": "solid",
     "editor.multiCursorModifier": "alt",
     "editor.minimap.enabled": false,
-    "docker.showExplorer": false,
-    "flow.useNPMPackagedFlow": true,
+    "docker.showExplorer": true,
     "vsicons.dontShowNewVersionMessage": true,
     "vim.enableNeovim": true,
     "vim.easymotion": true,
@@ -20,7 +18,7 @@
     "workbench.startupEditor": "none",
     "window.zoomLevel": 0,
     "editor.fontSize": 14,
-    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.iconTheme": "eq-material-theme-icons-darker",
     "materialTheme.cache.workbench.settings": {
         "themeColours": "Palenight",
         "accent": "Purple",
@@ -52,7 +50,8 @@
         },
         {
             "before": [
-                "leader", "/"
+                "leader",
+                "/"
             ],
             "after": [],
             "commands": [
@@ -69,5 +68,14 @@
     "editor.fontLigatures": true,
     "flow.enabled": false,
     "eslint.autoFixOnSave": true,
-    "prettier.eslintIntegration": true
+    "prettier.eslintIntegration": true,
+    // Configure glob patterns for excluding files and folders. For example, the files explorer decides which files and folders to show or hide based on this setting.
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "materialTheme.fixIconsRunning": false,
 }
