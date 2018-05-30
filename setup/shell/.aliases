@@ -14,3 +14,5 @@ alias please='sudo $(fc -ln -1)'            # Rerun previous command under sudo
 #   -------------------------------
 
 alias gt_download="cd ~/Downloads"
+alias gt_df="cd ~/.dotfiles"
+alias gt_setup="cd ~/.setup"
