@@ -1,89 +1,20 @@
 #  ---------------------------------------------------------------------------
 #
-#  Description:  This file holds all my BASH configurations and aliases
+#  Description:  This file holds all my BASH configurations
 #
 #  ---------------------------------------------------------------------------
 
-#   -------------------------------
-#   EXPORTS
-#   -------------------------------
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
 
-#   Change Prompt
-#   ------------------------------------------------------------
-export PS1="________________________________________________________________________________\n| \w @ \h (\u) \n| => "
-export PS2="| => "
 
-#   Set Paths
-#   ------------------------------------------------------------
-export PATH="$PATH:/usr/local/bin/"
-export PATH="/usr/local/git/bin:/usr/local/bin:/usr/local/:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
-
-#   Set Default Editor (change 'Nano' to the editor of your choice)
-#   ------------------------------------------------------------
-export EDITOR=/usr/bin/nano
-
-#   Set default blocksize for ls, df, du
-#   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
-#   ------------------------------------------------------------
-export BLOCKSIZE=1k
-
-#   Add color to terminal
-#   (this is all commented out as I use Mac Terminal Profiles)
-#   from http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
-#   ------------------------------------------------------------
-#   export CLICOLOR=1
-#   export LSCOLORS=ExFxBxDxCxegedabagacad
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-
-# MacPorts Installer addition on 2017-03-07_at_14:12:43: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-export JAVA_HOME=$(/usr/libexec/java_home)
-
-#   -----------------------------
-#   MAKE TERMINAL BETTER
-#   -----------------------------
-alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
-alias which='type -a'                       # which:        Find executables
-alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Pathsays -i -a1 $@ ~/Library/init/bash/aliases.bash | grep -v '^\s*$' | less -FSRXc ; }
-
-#   -------------------------------
-#   
-#   ---------------------------------------
-#   DEVELOPMENT
-#   ---------------------------------------
-
-#   REACT NATIVE
-alias reactcli="npm install -g react-native-cli"
-alias reactios="react-native run-ios"
-alias reactintegrate="(JS_DIR=`pwd`/ReactComponent; cd node_modules/react-native; npm run start -- --root $JS_DIR)"
-
-#   ---------------------------------------
-#   OTHER TOOLS
-#   ---------------------------------------
-
-# Thefuck (https://github.com/nvbn/thefuck)
-eval "$(thefuck --alias)"
-# You can use whatever you want as an alias, like for Mondays:
-eval "$(thefuck --alias FUCK)"
-
-# Gitignore (https://www.gitignore.io)
-function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
-
-# z: jumping between projects (https://github.com/rupa/z)
-# Tracks your most used directories, based on 'frecency'.
-. `brew --prefix`/etc/profile.d/z.sh
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+for file in ~/.setup/shell/.{path,bash_prompt,exports,aliases,functions,extra}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 # RVM tools
 source ~/.profile
 ##
 # Your previous /Users/mac/.bash_profile file was backed up as /Users/mac/.bash_profile.macports-saved_2017-03-07_at_14:12:43
 ##
-
-

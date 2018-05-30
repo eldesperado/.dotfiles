@@ -1,0 +1,48 @@
+#  ---------------------------------------------------------------------------
+#
+#  Description:  This file holds all my exports
+#
+#  ---------------------------------------------------------------------------
+
+#   Set Paths
+#   ------------------------------------------------------------
+export PATH="$PATH:/usr/local/bin/"
+export PATH="/usr/local/git/bin:/usr/local/bin:/usr/local/:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH"
+
+#   Set Default Editor (change 'Nano' to the editor of your choice)
+#   ------------------------------------------------------------
+export EDITOR=/usr/bin/nano
+
+#   Set default blocksize for ls, df, du
+#   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
+#   ------------------------------------------------------------
+export BLOCKSIZE=1k
+
+#   Add color to terminal
+#   (this is all commented out as I use Mac Terminal Profiles)
+#   from http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
+#   ------------------------------------------------------------
+#   export CLICOLOR=1
+#   export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# Increase Bash history size. Allow 32³ entries; the default is 500.
+export HISTSIZE='32768';
+export HISTFILESIZE="${HISTSIZE}";
+# Omit duplicates and commands that begin with a space from history.
+export HISTCONTROL='ignoreboth';
+
+# Prefer US English and use UTF-8.
+export LANG='en_US.UTF-8';
+export LC_ALL='en_US.UTF-8';
+
+# Highlight section titles in manual pages.
+export LESS_TERMCAP_md="${yellow}";
+
+# Don’t clear the screen after quitting a manual page.
+export MANPAGER='less -X';
+
+# MacPorts Installer addition on 2017-03-07_at_14:12:43: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+export JAVA_HOME=$(/usr/libexec/java_home)

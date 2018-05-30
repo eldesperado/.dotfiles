@@ -1,0 +1,16 @@
+#  ---------------------------------------------------------------------------
+#
+#  Description:  This file holds all my aliases
+#
+#  ---------------------------------------------------------------------------
+
+alias which='type -a'                       # which:        Find executables
+alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
+alias h='history'                           # Show command history
+alias please='sudo $(fc -ln -1)'            # Rerun previous command under sudo
+
+#   -------------------------------
+#   DIRECTORY SHORTCUTS
+#   -------------------------------
+
+alias gt_download="cd ~/Downloads"

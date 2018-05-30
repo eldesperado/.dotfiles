@@ -1,0 +1,19 @@
+#  ---------------------------------------------------------------------------
+#
+#  Description:  This file holds all my functions
+#
+#  ---------------------------------------------------------------------------
+
+cd() { builtin cd "$@"; ll; }                                   # Always list directory contents upon 'cd'
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}   # Gitignore (https://www.gitignore.io)
+
+# Thefuck (https://github.com/nvbn/thefuck)
+eval "$(thefuck --alias)"
+# You can use whatever you want as an alias, like for Mondays:
+eval "$(thefuck --alias FUCK)"
+
+# z: jumping between projects (https://github.com/rupa/z)
+# Tracks your most used directories, based on 'frecency'.
+. `brew --prefix`/etc/profile.d/z.sh
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
