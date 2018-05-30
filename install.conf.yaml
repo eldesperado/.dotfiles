@@ -46,6 +46,9 @@
     ~/.vimrc:
         force: true
         path: setup/vim/vimrc
+    ~/.vim_runtime:
+        force: true
+        path: setup/vim/vim_runtime/vim_runtime
 
     # zsh/prezto:
     ~/.zprezto:
@@ -81,10 +84,6 @@
     # vscode
     "~/Library/Application Support/Code/User/settings.json":
         path: setup/vscode/settings.json
-        create: true
-        force: true
-    "~/Library/Application Support/Code/User/snippets":
-        path: setup/vscode/snippets
         create: true
         force: true
 
