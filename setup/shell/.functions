@@ -4,7 +4,6 @@
 #
 #  ---------------------------------------------------------------------------
 
-cd() { builtin cd "$@"; ll; }                                   # Always list directory contents upon 'cd'
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}   # Gitignore (https://www.gitignore.io)
 
 # Thefuck (https://github.com/nvbn/thefuck)
