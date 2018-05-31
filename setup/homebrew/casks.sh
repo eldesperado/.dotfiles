@@ -11,6 +11,7 @@ brew cask install 'iterm2'
 brew cask install 'visual-studio-code'
 brew cask install 'reveal'
 brew cask install 'sourcetree'
+brew cask install 'dash'
 
 # productivity
 brew cask install 'alfred'
