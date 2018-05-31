@@ -10,3 +10,9 @@
 [submodule "setup/zsh-prezto/prezto"]
 	path = setup/zsh-prezto/prezto
 	url = https://github.com/sorin-ionescu/prezto
+[submodule "setup/themes/onedark/vim"]
+	path = setup/themes/onedark/vim
+	url = https://github.com/joshdick/onedark.vim.git
+[submodule "setup/themes/onedark/terminal"]
+	path = setup/themes/onedark/terminal
+	url = https://github.com/nathanbuchar/atom-one-dark-terminal.git
