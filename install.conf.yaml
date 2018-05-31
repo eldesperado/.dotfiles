@@ -49,6 +49,9 @@
     ~/.vim_runtime:
         force: true
         path: setup/vim/vim_runtime/vim_runtime
+    ~/.vim:
+        force: true
+        path: setup/vim/vim
 
     # zsh/prezto:
     ~/.zprezto:
