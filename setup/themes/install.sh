@@ -27,13 +27,13 @@ tell application "Terminal"
 	local allOpenedWindows
 	local initialOpenedWindows
 	local windowID
-	set themeName to "OneDark"
+	set themeName to "One Dark"
 	(* Store the IDs of all the open terminal windows. *)
 	set initialOpenedWindows to id of every window
 	(* Open the custom theme so that it gets added to the list
 	   of available terminal themes (note: this will open two
 	   additional terminal windows). *)
-	do shell script "open '$theme_dir/onedark/" & themeName & ".terminal'"
+	do shell script "open '$theme_dir/onedark/terminal/scheme/terminal/" & themeName & ".terminal'"
 	(* Wait a little bit to ensure that the custom theme is added. *)
 	delay 1
 	(* Set the custom theme as the default terminal theme. *)
@@ -58,5 +58,5 @@ success "Installed Terminal theme."
 
 info "Installing iTerm2 theme..."
 # Install the theme for iTerm
-open "$theme_dir/onedark/OneDark.itermcolors"
+open "$theme_dir/onedark/terminal/scheme/iterm/One Dark.itermcolors"
 success "Installed iTerm2 theme."
