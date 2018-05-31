@@ -90,6 +90,11 @@
         create: true
         force: true
 
+    # lldb:
+    ~/.lldbinit: 
+        force: true
+        path: setup/lldb/lldbinit
+
 - shell:
     # font
     - 
