@@ -24,6 +24,7 @@ brew cask install 'karabiner-elements'
 brew cask install '1password'
 brew cask install 'simplenote'
 brew cask install 'the-unarchiver'
+brew cask install 'hazel'
 
 # basics
 brew cask install 'google-chrome'
