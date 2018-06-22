@@ -9,3 +9,6 @@ try
 source ~/.vim_runtime/../vim/my_configs.vim
 catch
 endtry
+
+syntax on
+colorscheme onedark
