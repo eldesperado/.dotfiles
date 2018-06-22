@@ -5,7 +5,7 @@
     "editor.cursorBlinking": "solid",
     "editor.multiCursorModifier": "alt",
     "editor.minimap.enabled": false,
-    "docker.showExplorer": true,
+    "docker.showExplorer": false,
     "vsicons.dontShowNewVersionMessage": true,
     "vim.enableNeovim": true,
     "vim.easymotion": true,

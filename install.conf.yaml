@@ -39,6 +39,7 @@
 
     # Git:
     ~/.gitignore_global: setup/git/gitignore_global
+    ~/.gitconfig: setup/git/gitconfig
     ~/.gitconfig.local: setup/git/gitconfig.local
     ~/.stCommitMsg: setup/git/stCommitMsg
 
