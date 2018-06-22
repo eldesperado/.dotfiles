@@ -35,14 +35,19 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search' \
   'completion' \
-  'prompt' \
+  'autosuggestions' \
+  'prompt'
+
 
 #
 # Autosuggestions
 #
 
+# To enable highlighting for this module only
+zstyle ':prezto:module:autosuggestions' color 'yes'
+
 # Set the query found color.
-# zstyle ':prezto:module:autosuggestions:color' found ''
+zstyle ':prezto:module:autosuggestions:color' found 'fg=60'
 
 #
 # Completions
