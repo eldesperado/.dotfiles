@@ -8,6 +8,7 @@ alias which='type -a'                       # which:        Find executables
 alias path='echo -e ${PATH//:/\\n}'         # path:         Echo all executable Paths
 alias h='history'                           # Show command history
 alias please='sudo $(fc -ln -1)'            # Rerun previous command under sudo
+alias reload_zsh='. ~/.zshrc'               # Reload ZSH configurations
 
 #   -------------------------------
 #   DIRECTORY SHORTCUTS
@@ -20,5 +21,3 @@ alias gt_setup="cd ~/.setup"
 #   -------------------------------
 #   GIT
 #   -------------------------------
-
-alias gl="git log --pretty=format:'%C(yellow)%h|%Cred%ad|%Cblue%an|%Cgreen%d %Creset%s' --date=short | column -ts'|' | less -r"
