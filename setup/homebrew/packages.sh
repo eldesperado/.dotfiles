@@ -24,6 +24,7 @@ brew install 'ripgrep'
 brew install 'thefuck'
 brew install 'z'
 brew install 'tldr'
+brew install 'wifi-password' # People ask you for the Wi-Fi password. Answer quickly
 
 # Devs
 brew install 'mitmproxy'
