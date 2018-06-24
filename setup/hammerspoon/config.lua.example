@@ -1,0 +1,71 @@
+-- copy this file to config.lua and edit as needed
+--
+local config = {}
+
+-- Accessible to modules
+-----------------------------------------------
+config.global = {}   -- Accessible to modules
+config.bindings = {} -- Key bindings
+
+-- Logging
+config.global.loglevel = 'warning'
+
+-- Modules
+-----------------------------------------------
+-- Include extra modules
+config.modulesInclude = {
+  "nonexistant.module",
+}
+-- Exclude modules
+config.modulesExclude = {
+  "nonexistant.module",
+}
+
+-- Module overides
+-----------------------------------------------
+-- caffeine
+config.global['system.caffeine'] = {
+  message = {
+    caffinated = '(ʘ‿ʘ) Wired',
+    decaffinated = '¬_¬ Sleepy',
+  }
+}
+
+-- Nightwatch
+config.global['system.nightshift'] = {
+  nightStart = '18:00',
+}
+
+-- Weather location
+config.global['misc.weather'] = {
+  location = 'Edinburgh, UK',
+}
+
+-- Window Management
+config.global['window.management'] = {
+  animationDuration = .1,
+}
+
+-- Hazel
+config.global['system.hazel'] = {
+  watchers = {
+    desktop = { enabled = true },
+    downloads = { enabled = true },
+    downloadsArchive = { enabled = true },
+  }
+}
+
+-- Overide key bindings
+-----------------------------------------------
+config.bindings.keys = { triggers = {} }
+config.bindings.keys.triggers["Spotify What Track"] = { "mash", "y" }
+
+
+-- Overide Hammerspoon settings
+-----------------------------------------------
+-- Disable all window animations
+hs.window.animationDuration = 0
+
+
+----------------------------------------------------------------------------
+return config
