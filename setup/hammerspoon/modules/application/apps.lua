@@ -3,12 +3,15 @@
 -----------------------------------------------
 local m = {}
 
+local mouse = require('utils.mouse')
+
 m.toggleApp = function(appName)
     local app = hs.appfinder.appFromName(appName)
     if not app or app:isHidden() then
       hs.application.launchOrFocus(appName)
     elseif hs.application.frontmostApplication() ~= app then
       app:activate()
+      mouse:centerCursorOnFocusedWindow()
     else
       app:hide()
     end
