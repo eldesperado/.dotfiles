@@ -53,9 +53,8 @@ keys.triggers = {
 
   -- Hammerspoon
   ["Hammerspoon Console"] = { "utils", "\\" },
-  ["Hammerspoon Reload"] = { "utils", "R", false },
+  ["Hammerspoon Reload"] = { "utils", "-", false },
   ["Hammerspoon Docs"] = { "utils", "`" },
-  ["Reload Hammerspoon"] = { "utils", "-" },
 
   -- System
   -----------------------------------------------
@@ -104,7 +103,7 @@ keys.triggers = {
   ["Window Next Screen"] = { "position", "0" },
 
   -- Show interactive grid
-  ["Window Show Grid"] = { "position", "§" },
+  ["Window Show Grid"] = { "position", "g" },
 
 }
 

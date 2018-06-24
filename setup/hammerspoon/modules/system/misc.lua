@@ -10,16 +10,10 @@ m.showDateAndTime = function()
   alert.show(os.date("It's %R on %B %e, %G"))
 end
 
--- Reload config
-m.reloadHammer = function()
-  hs.reload()
-end
-
 -- Add triggers
 -----------------------------------------------
 m.triggers = {}
 m.triggers["Show Date And Time"] = m.showDateAndTime
-m.triggers["Reload Hammerspoon"] = m.reloadHammer
 
 ----------------------------------------------------------------------------
 return m
