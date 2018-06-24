@@ -74,9 +74,6 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Git
 #
 
-# Log Format
-zstyle ':prezto:module:git:log:context' format '%C(yellow)%h|%Cred%ad|%Cblue%an|%Cgreen%d %Creset%s'
-
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 # zstyle ':prezto:module:git:status:ignore' submodules 'all'
 

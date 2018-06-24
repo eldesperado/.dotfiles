@@ -15,6 +15,9 @@
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
 
+	# Get my working directory up to date
+	up = !"git pull --rebase --prune $@ && git submodule update --init --recursive"
+
 	# Clone a repository including all submodules
 	c = clone --recursive
 
@@ -29,8 +32,8 @@
 	branches = branch -a
 	remotes = remote -v
 
-	# List aliases
-	aliases = config --get-regexp alias
+	# List aliases (http://brettterpstra.com/2014/08/04/shell-tricks-one-git-alias-to-rule-them-all/)
+	aliases = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
 
 	# Amend the currently staged files to the latest commit
 	amend = commit --amend --reuse-message=HEAD
@@ -59,9 +62,15 @@
 	# Find commits by commit message
 	fm = "!f() { git l --grep=$1; }; f"
 
+	# Filter commits by author
+	fa = "!f() { git l --decorate --date=short --author $1; }; f"
+
+	# Filter commits owned by me
+	mine = "!f() { git fa $(git config user.email); }; f"
+
 	# Remove branches that have already been merged with master
 	# a.k.a. ‘delete merged’
-	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+	dm = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs git branch -d; }; f"
 
 	# List contributors with number of commits
 	contributors = shortlog --summary --numbered
