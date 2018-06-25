@@ -27,6 +27,15 @@
 	# Switch to a branch, creating it if necessary
 	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
+	# Adds all changes including untracked files and creates a commit
+	save = !git add -A && git commit -m 'SAVEPOINT'
+
+	# Only commits tracked changes
+	wip = commit -am "WIP"
+
+	# Resets the previous commit, but keeps all the changes from that commit in the working directory
+	undo = reset HEAD~1 --mixed
+	
 	# Show verbose output about tags, branches or remotes
 	tags = tag -l
 	branches = branch -a
