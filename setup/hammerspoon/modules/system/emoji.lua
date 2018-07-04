@@ -6,7 +6,7 @@ local m = {}
 
 jspoon.install:andUse( "Emojis",
    {
-      hotkeys = { toggle = { {"cmd","alt","ctrl"}, "e" } }
+      hotkeys = { toggle = { {"shift","alt","ctrl"}, "e" } }
    }
 )
 
