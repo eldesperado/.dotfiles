@@ -85,19 +85,19 @@ m.handleClick = m.toggleState
 
 -- Start nightshift
 m.start = function()
-  -- Setup menubar app
-  m.menubar = hs.menubar.newWithPriority(m.config.menupriority)
-  -- Get the persistant state
-  local persistedState = hs.settings.get(m.config.isActiveKey)
-  if m.menubar then
-    m.log.i('Persisted state was ' .. m.getStateKey(persistedState))
-    -- Set the tooltip
-    m.menubar:setTooltip(m.config.menubar.tooltip)
-    -- Set the click handler
-    m.menubar:setClickCallback(m.handleClick)
-    -- Set the state
-    m.setState(persistedState)
-  end
+  -- -- Setup menubar app
+  -- m.menubar = hs.menubar.newWithPriority(m.config.menupriority)
+  -- -- Get the persistant state
+  -- local persistedState = hs.settings.get(m.config.isActiveKey)
+  -- if m.menubar then
+  --   m.log.i('Persisted state was ' .. m.getStateKey(persistedState))
+  --   -- Set the tooltip
+  --   m.menubar:setTooltip(m.config.menubar.tooltip)
+  --   -- Set the click handler
+  --   m.menubar:setClickCallback(m.handleClick)
+  --   -- Set the state
+  --   m.setState(persistedState)
+  -- end
 
 end
 

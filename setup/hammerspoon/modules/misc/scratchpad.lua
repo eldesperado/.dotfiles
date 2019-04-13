@@ -168,18 +168,18 @@ function m.hide()
 end
 
 function m.start()
-  menu = hs.menubar.newWithPriority(m.config.menupriority)
-  -- menu:setTitle(m.config.menubar.icon)
-  menu:setIcon(hs.image.imageFromPath(m.config.menubar.icon):setSize({w=16,h=16}))
-  menu:setTooltip(m.config.menubar.tooltip)
-  menu:setMenu(menuClickCallback)
+  -- menu = hs.menubar.newWithPriority(m.config.menupriority)
+  -- -- menu:setTitle(m.config.menubar.icon)
+  -- menu:setIcon(hs.image.imageFromPath(m.config.menubar.icon):setSize({w=16,h=16}))
+  -- menu:setTooltip(m.config.menubar.tooltip)
+  -- menu:setMenu(menuClickCallback)
 
-  chooser = hs.chooser.new(choiceCallback)
-  chooser:width(m.config.width)
-  -- disable built-in search
-  chooser:queryChangedCallback(function() end)
+  -- chooser = hs.chooser.new(choiceCallback)
+  -- chooser:width(m.config.width)
+  -- -- disable built-in search
+  -- chooser:queryChangedCallback(function() end)
 
-  resetChoices()
+  -- resetChoices()
 end
 
 function m.stop()

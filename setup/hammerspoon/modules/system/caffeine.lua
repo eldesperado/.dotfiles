@@ -48,16 +48,16 @@ end
 
 -- Start the module
 m.start = function()
-  m.menubar = hs.menubar.newWithPriority(m.config.menupriority)
-  -- Get the persistant state
-  local persistedState = hs.settings.get(m.config.isActiveKey)
-  if m.menubar then
-    m.log.i('Persisted state was ' .. m.getStateKey(persistedState))
-    -- Set the click handler
-    m.menubar:setClickCallback(m.handleClick)
-    -- Set the state
-    m.setState(persistedState)
-  end
+  -- m.menubar = hs.menubar.newWithPriority(m.config.menupriority)
+  -- -- Get the persistant state
+  -- local persistedState = hs.settings.get(m.config.isActiveKey)
+  -- if m.menubar then
+  --   m.log.i('Persisted state was ' .. m.getStateKey(persistedState))
+  --   -- Set the click handler
+  --   m.menubar:setClickCallback(m.handleClick)
+  --   -- Set the state
+  --   m.setState(persistedState)
+  -- end
 end
 
 
