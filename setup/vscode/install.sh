@@ -1,18 +1,22 @@
 # https://stackoverflow.com/questions/59895/getting-the-source-directory-of-a-bash-script-from-within/246128
-SOURCE="${BASH_SOURCE[0]}"
-while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
-  TARGET="$(readlink "$SOURCE")"
-  if [[ $TARGET == /* ]]; then
-    SOURCE="$TARGET"
-  else
-    DIR="$( dirname "$SOURCE" )"
-    SOURCE="$DIR/$TARGET" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
-  fi
-done
+# SOURCE="${BASH_SOURCE[0]}"
+# while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+#   TARGET="$(readlink "$SOURCE")"
+#   if [[ $TARGET == /* ]]; then
+#     SOURCE="$TARGET"
+#   else
+#     DIR="$( dirname "$SOURCE" )"
+#     SOURCE="$DIR/$TARGET" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+#   fi
+# done
 
-vscode_dir="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
-source "$vscode_dir/../lib/log.sh"
-source "$vscode_dir/../lib/prompt.sh"
+# vscode_dir="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+# source "$vscode_dir/../lib/log.sh"
+# source "$vscode_dir/../lib/prompt.sh"
+
+for f in ~/.setup/lib/*; do
+  source $f;
+done
 
 if ! yes_no_prompt "Install VSCode extensions & themes? "; then
   exit
