@@ -203,22 +203,22 @@ m.init = function()
   end
 end
 
--- Start the module
-m.start = function(conf)
-  m.app = hs.menubar.newWithPriority(m.config.menupriority)
-  -- refresh on click
-  m.app:setClickCallback(m.update)
-  -- update weather every so often
-  w = hs.timer.doEvery(m.config.refresh, m.update)
-  -- set initial view
-  m.init()
-end
+-- -- Start the module
+-- m.start = function(conf)
+--   m.app = hs.menubar.newWithPriority(m.config.menupriority)
+--   -- refresh on click
+--   m.app:setClickCallback(m.update)
+--   -- update weather every so often
+--   w = hs.timer.doEvery(m.config.refresh, m.update)
+--   -- set initial view
+--   m.init()
+-- end
 
 
--- Add triggers
------------------------------------------------
-m.triggers = {}
-m.triggers["Weather Refresh"] = m.update
+-- -- Add triggers
+-- -----------------------------------------------
+-- m.triggers = {}
+-- m.triggers["Weather Refresh"] = m.update
 
 
 ----------------------------------------------------------------------------

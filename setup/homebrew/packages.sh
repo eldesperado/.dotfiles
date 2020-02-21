@@ -33,5 +33,4 @@ brew install 'ios-webkit-debug-proxy'
 brew install 'cocoapods'
 brew install 'carthage'
 brew install 'chisel'
-brew install 'vim'
 
