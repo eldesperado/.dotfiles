@@ -31,13 +31,11 @@ keys.triggers = {
   ["Visual Studio Code Toggle"] = { "apps", "c" },
   ["SourceTree Toggle"] = { "apps", "s" },
   ["Dash Toggle"] = { "apps", "d" },
-  ["Pulse Secure Toggle"] = { "apps", "p" },
   ["Spotify Toggle"] = { "apps", "m" },
-  ["Microsoft Outlook Toggle"] = { "apps", "e" },
   ["Finder Toggle"] = { "apps", "f" },
   ["Simulator Toggle"] = { "apps", "z" },
-  ["Anki"] = { "apps", "a" },
-  ["Microsoft Note"] = { "apps", "o" },
+  ["Anki Toggle"] = { "apps", "a" },
+  ["Microsoft OneNote Toggle"] = { "apps", "o" },
 
   -- Audio
   -----------------------------------------------
