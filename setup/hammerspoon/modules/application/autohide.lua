@@ -49,14 +49,14 @@ m.toggle = function()
 end
 
 -- Start the autohide module
-m.start = function()
-  local persistedState = hs.settings.get(m.config.isActiveKey)
-  if persistedState ~= nil then
-    isActive = persistedState
-  end
-  m.watcher:start()
-  m.setState(isActive)
-end
+-- m.start = function()
+--   local persistedState = hs.settings.get(m.config.isActiveKey)
+--   if persistedState ~= nil then
+--     isActive = persistedState
+--   end
+--   m.watcher:start()
+--   m.setState(isActive)
+-- end
 
 
 -- Add triggers
