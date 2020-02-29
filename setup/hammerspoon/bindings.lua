@@ -23,7 +23,7 @@ keys.triggers = {
   -----------------------------------------------
   ["Autohide Toggle"] = { "focus", "F13" },
 
-  ["Brave Toggle"] = { "apps", "1" },
+  ["Browser"] = { "apps", "1" },
   ["Xcode Toggle"] = { "apps", "2" },
   ["Zalo Toggle"] = { "apps", "3" },
   ["Reveal Toggle"] = { "apps", "4" },
@@ -36,6 +36,8 @@ keys.triggers = {
   ["Microsoft Outlook Toggle"] = { "apps", "e" },
   ["Finder Toggle"] = { "apps", "f" },
   ["Simulator Toggle"] = { "apps", "z" },
+  ["Anki"] = { "apps", "a" },
+  ["Microsoft Note"] = { "apps", "o" },
 
   -- Audio
   -----------------------------------------------
