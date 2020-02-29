@@ -3,7 +3,7 @@ brew cask install 'java'
 
 # fonts
 brew cask install 'font-sharetechmono-nerd-font-mono'
-brew cask install 'font-fira-code'
+brew cask install 'font-jetbrains-mono'
 
 # devs
 brew cask install 'iterm2'
@@ -27,13 +27,11 @@ brew cask install 'hazel'
 # basics
 brew cask install 'dropbox'
 brew cask install 'spotify'
-brew cask install 'slack'
 
 # quicklook
 brew cask install 'qlcolorcode'
 brew cask install 'qlmarkdown'
 brew cask install 'quicklook-json'
 brew cask install 'quicklook-csv'
-brew cask install 'qlstephen'
 brew cask install 'qlimagesize'
 brew cask install 'qlswift'
