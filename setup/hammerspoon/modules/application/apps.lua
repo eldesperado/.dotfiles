@@ -21,7 +21,7 @@ end
 -- Add triggers
 -----------------------------------------------
 m.triggers = {}
-m.triggers["Browser"] = function() m.toggleApp("Microsoft Edge") end
+m.triggers["Browser"] = function() m.toggleApp("Brave Edge") end
 m.triggers["Xcode Toggle"] = function() m.toggleApp("Xcode") end
 m.triggers["Zalo Toggle"] = function() m.toggleApp("Zalo") end
 m.triggers["Reveal Toggle"] = function() m.toggleApp("Todoist") end
