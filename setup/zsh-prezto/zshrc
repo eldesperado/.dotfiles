@@ -34,3 +34,7 @@ source ~/.profile
 ##
 # Your previous /Users/mac/.bash_profile file was backed up as /Users/mac/.bash_profile.macports-saved_2017-03-07_at_14:12:43
 ##
+
+export MonkeyDevPath=/opt/MonkeyDev
+export MonkeyDevDeviceIP=
+export PATH=/opt/MonkeyDev/bin:$PATH
