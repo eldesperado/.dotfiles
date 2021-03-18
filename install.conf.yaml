@@ -43,17 +43,6 @@
     ~/.gitconfig.local: setup/git/gitconfig.local
     ~/.stCommitMsg: setup/git/stCommitMsg
 
-    # Vim:
-    ~/.vimrc:
-        force: true
-        path: setup/vim/vimrc
-    ~/.vim_runtime:
-        force: true
-        path: setup/vim/vim_runtime/vim_runtime
-    ~/.vim:
-        force: true
-        path: setup/vim/vim
-
     # zsh/prezto:
     ~/.zprezto:
         force: true

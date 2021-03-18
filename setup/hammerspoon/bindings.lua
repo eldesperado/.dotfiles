@@ -29,13 +29,10 @@ keys.triggers = {
   ["Reveal Toggle"] = { "apps", "4" },
   ["iTerm Toggle"] = { "apps", "i" },
   ["Visual Studio Code Toggle"] = { "apps", "c" },
-  ["SourceTree Toggle"] = { "apps", "s" },
-  ["Dash Toggle"] = { "apps", "d" },
+  ["Git Control Toggle"] = { "apps", "s" },
   ["Spotify Toggle"] = { "apps", "m" },
   ["Finder Toggle"] = { "apps", "f" },
   ["Simulator Toggle"] = { "apps", "z" },
-  ["Anki Toggle"] = { "apps", "a" },
-  ["Microsoft OneNote Toggle"] = { "apps", "o" },
 
   -- Audio
   -----------------------------------------------

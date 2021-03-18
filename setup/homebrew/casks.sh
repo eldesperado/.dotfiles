@@ -1,37 +1,28 @@
 # env
-brew cask install 'java'
-
-# fonts
-brew cask install 'font-sharetechmono-nerd-font-mono'
-brew cask install 'font-jetbrains-mono'
+brew install --cask 'homebrew/cask-versions/adoptopenjdk8'
 
 # devs
-brew cask install 'iterm2'
-brew cask install 'visual-studio-code'
-brew cask install 'reveal'
-brew cask install 'sourcetree'
-brew cask install 'dash'
+brew install 'iterm2'
+brew install 'visual-studio-code'
+brew install 'sourcetree'
 
 # productivity
-brew cask install 'alfred'
-brew cask install 'bartender'
-brew cask install 'flux'
-brew cask install 'popclip'
-brew cask install 'hammerspoon'
-brew cask install 'karabiner-elements'
-brew cask install '1password'
-brew cask install 'simplenote'
-brew cask install 'the-unarchiver'
-brew cask install 'hazel'
+brew install 'alfred'
+brew install 'flux'
+brew install 'popclip'
+brew install 'hammerspoon'
+brew install 'karabiner-elements'
+brew install '1password'
+brew install 'simplenote'
+brew install 'the-unarchiver'
 
 # basics
-brew cask install 'dropbox'
-brew cask install 'spotify'
+brew install 'dropbox'
+brew install 'spotify'
 
-# quicklook
-brew cask install 'qlcolorcode'
-brew cask install 'qlmarkdown'
-brew cask install 'quicklook-json'
-brew cask install 'quicklook-csv'
-brew cask install 'qlimagesize'
-brew cask install 'qlswift'
+# fonts
+brew install 'font-jetbrains-mono'
+
+# theme
+brew install romkatv/powerlevel10k/powerlevel10k
+echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
