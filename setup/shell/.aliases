@@ -19,5 +19,12 @@ alias gt_df="cd ~/.dotfiles"
 alias gt_setup="cd ~/.setup"
 
 #   -------------------------------
-#   GIT
+#   SSH
 #   -------------------------------
+
+function scp_zalo_file () {
+    scp -i ~/.ssh/id_rsa zdeploy@10.40.19.15:/data/ZaloCrashLogHttp/upload_data/completed/ios/$1 ~/Documents/ZaloStuff/CrashLogs
+}
+
+alias ssh_zalo='ssh -i ~/.ssh/id_rsa zdeploy@10.40.19.15'
+alias scp_zalo_down_to_document_folder=scp_zalo_file

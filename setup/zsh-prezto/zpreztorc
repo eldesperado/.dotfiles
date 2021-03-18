@@ -37,6 +37,8 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'autosuggestions' \
   'prompt'
+  'command-not-found' \
+  'ssh' \
 
 
 #
