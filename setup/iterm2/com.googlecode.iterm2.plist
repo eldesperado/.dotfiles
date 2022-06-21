@@ -473,6 +473,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>849343AA-11FD-4828-A752-D1B1077C9D37</string>
+	<key>EnableAPIServer</key>
+	<true/>
 	<key>EnableDivisionView</key>
 	<false/>
 	<key>HapticFeedbackForEsc</key>
@@ -1198,7 +1200,7 @@
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SoundForEsc</key>

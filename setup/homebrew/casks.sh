@@ -4,7 +4,7 @@ brew install --cask 'homebrew/cask-versions/adoptopenjdk8'
 # devs
 brew install 'iterm2'
 brew install 'visual-studio-code'
-brew install 'sourcetree'
+brew install 'fork'
 
 # productivity
 brew install 'alfred'

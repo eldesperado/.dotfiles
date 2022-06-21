@@ -21,10 +21,10 @@ end
 -- Add triggers
 -----------------------------------------------
 m.triggers = {}
-m.triggers["Browser"] = function() m.toggleApp("Safari") end
+m.triggers["Browser"] = function() m.toggleApp("Brave Browser") end
 m.triggers["Xcode Toggle"] = function() m.toggleApp("Xcode") end
 m.triggers["Zalo Toggle"] = function() m.toggleApp("Zalo") end
-m.triggers["Reveal Toggle"] = function() m.toggleApp("Todoist") end
+m.triggers["Todo Toggle"] = function() m.toggleApp("Microsoft To Do") end
 m.triggers["iTerm Toggle"] = function() m.toggleApp("iTerm") end
 m.triggers["Visual Studio Code Toggle"] = function() m.toggleApp("Visual Studio Code") end
 m.triggers["Git Control Toggle"] = function() m.toggleApp("Fork") end

@@ -78,4 +78,12 @@
         "**/.DS_Store": true
     },
     "materialTheme.fixIconsRunning": false,
+    "editor.accessibilitySupport": "off",
+    "files.associations": {
+        "*.h": "objective-c",
+        "*.txt": "log"
+    },
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
 }
