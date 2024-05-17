@@ -183,8 +183,7 @@
 
 	# https://git-scm.com/docs/git-config#git-config-pushdefault
 	default = simple
-	# Make `git push` push relevant annotated tags when pushing branches out.
-	followTags = true
+	followTags = false
 
 
 [difftool "sourcetree"]
@@ -193,10 +192,6 @@
 [mergetool "sourcetree"]
 	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 	trustExitCode = true
-
-[credential]
-	helper = osxkeychain
-
 [include]
     path = ~/.gitconfig.local
 
@@ -209,3 +204,5 @@
 [user]
 	name = TrungPNN
 	email = trungpnn@vng.com.vn
+[credential]
+	helper = osxkeychain
