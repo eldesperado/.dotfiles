@@ -4,17 +4,15 @@
     "editor.cursorStyle": "line",
     "editor.cursorBlinking": "solid",
     "editor.multiCursorModifier": "alt",
-    "editor.minimap.enabled": false,
     "docker.showExplorer": false,
     "vsicons.dontShowNewVersionMessage": true,
     "vim.enableNeovim": true,
     "vim.easymotion": true,
     "vim.easymotionMarkerFontFamily": "'FuraCode Nerd Font', Menlo",
     "git.path": "git",
-    "workbench.activityBar.visible": false,
     "window.titleBarStyle": "custom",
     "window.nativeTabs": false,
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": "single",
     "workbench.startupEditor": "none",
     "window.zoomLevel": 0,
     "editor.fontSize": 14,
@@ -86,4 +84,8 @@
     "terminal.integrated.env.osx": {
         "FIG_NEW_SESSION": "1"
     },
+    "workbench.activityBar.location": "hidden",
+    "gitlens.ai.experimental.provider": "anthropic",
+    "gitlens.ai.experimental.openai.model": "gpt-3.5-turbo-1106",
+    "gitlens.ai.experimental.anthropic.model": "claude-2",
 }

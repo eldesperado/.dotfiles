@@ -26,11 +26,10 @@ keys.triggers = {
   ["Browser"] = { "apps", "1" },
   ["Xcode Toggle"] = { "apps", "2" },
   ["Zalo Toggle"] = { "apps", "3" },
-  ["Todo Toggle"] = { "apps", "4" },
+  ["Obsidian Toggle"] = { "apps", "4" },
   ["iTerm Toggle"] = { "apps", "i" },
   ["Visual Studio Code Toggle"] = { "apps", "c" },
   ["Git Control Toggle"] = { "apps", "s" },
-  ["Spotify Toggle"] = { "apps", "m" },
   ["Finder Toggle"] = { "apps", "f" },
   ["Simulator Toggle"] = { "apps", "z" },
 
