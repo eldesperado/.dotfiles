@@ -1,2 +1,3 @@
 .extras
 my_configs.vim
+setup/shell/zalo/zalo_credential.sh
